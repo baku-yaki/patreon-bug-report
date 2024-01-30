@@ -13,7 +13,9 @@ export default async function ClientPage() {
       image: session.user.image,
     }
   }
-
+  console.log(session.user.creator_id)
+  console.log(session.user.patron_id)
+  console.log(session.user.reward_id)
   return (
     <SessionProvider session={session}>
       <ClientExample />
